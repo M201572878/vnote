@@ -1,0 +1,771 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5E2FA660-E7E1-3453-BA87-5BE284027B5F}</ProjectGuid>
+    <RootNamespace>VNote</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>VNote</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v141</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>VNote</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VNote</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VNote</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;..\hoedown;..\peg-highlight;$(QTDIR)\include;$(QTDIR)\include\QtWebEngineWidgets;$(QTDIR)\include\QtWebEngineCore;$(QTDIR)\include\QtQuick;$(QTDIR)\include\QtPrintSupport;$(QTDIR)\include\QtSvg;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWebChannel;$(QTDIR)\include\QtQml;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtPositioning;$(QTDIR)\include\QtCore;release;$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_WEBENGINEWIDGETS_LIB;QT_WEBENGINECORE_LIB;QT_QUICK_LIB;QT_PRINTSUPPORT_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmain.lib;shell32.lib;hoedown.lib;peg-highlight.lib;$(QTDIR)\lib\Qt5WebEngineWidgets.lib;$(QTDIR)\lib\Qt5WebEngineCore.lib;$(QTDIR)\lib\Qt5Quick.lib;$(QTDIR)\lib\Qt5PrintSupport.lib;$(QTDIR)\lib\Qt5Svg.lib;$(QTDIR)\lib\Qt5Widgets.lib;$(QTDIR)\lib\Qt5Gui.lib;$(QTDIR)\lib\Qt5WebChannel.lib;$(QTDIR)\lib\Qt5Qml.lib;$(QTDIR)\lib\Qt5Network.lib;$(QTDIR)\lib\Qt5Positioning.lib;$(QTDIR)\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;$(QTDIR)\lib;C:\Users\hyhyx\Desktop\Code\vnote\hoedown\release;C:\Users\hyhyx\Desktop\Code\vnote\peg-highlight\release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\VNote.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_WEBENGINEWIDGETS_LIB;QT_WEBENGINECORE_LIB;QT_QUICK_LIB;QT_PRINTSUPPORT_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <QTDIR>$(QTDIR)</QTDIR>
+      <InputFile>%(FullPath)</InputFile>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <Define>UNICODE;_UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_WEBENGINEWIDGETS_LIB;QT_WEBENGINECORE_LIB;QT_QUICK_LIB;QT_PRINTSUPPORT_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_CORE_LIB</Define>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>release/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <IncludePath>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;$(QTDIR)\mkspecs/win32-msvc;.;C:/Users/hyhyx/Desktop/Code/vnote/hoedown;C:/Users/hyhyx/Desktop/Code/vnote/peg-highlight;$(QTDIR)\include;$(QTDIR)\include/QtWebEngineWidgets;$(QTDIR)\include/QtWebEngineCore;$(QTDIR)\include/QtQuick;$(QTDIR)\include/QtPrintSupport;$(QTDIR)\include/QtSvg;$(QTDIR)\include/QtWidgets;$(QTDIR)\include/QtGui;$(QTDIR)\include/QtANGLE;$(QTDIR)\include/QtWebChannel;$(QTDIR)\include/QtQml;$(QTDIR)\include/QtNetwork;$(QTDIR)\include/QtPositioning;$(QTDIR)\include/QtCore;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\cppwinrt</IncludePath>
+    </QtMoc>
+    <QtRcc>
+      <QTDIR>$(QTDIR)</QTDIR>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <Compression>default</Compression>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+      <InputFile>%(FullPath)</InputFile>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;..\hoedown;..\peg-highlight;$(QTDIR)\include;$(QTDIR)\include\QtWebEngineWidgets;$(QTDIR)\include\QtWebEngineCore;$(QTDIR)\include\QtQuick;$(QTDIR)\include\QtPrintSupport;$(QTDIR)\include\QtSvg;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtANGLE;$(QTDIR)\include\QtWebChannel;$(QTDIR)\include\QtQml;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtPositioning;$(QTDIR)\include\QtCore;debug;$(QTDIR)\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_WEBENGINEWIDGETS_LIB;QT_WEBENGINECORE_LIB;QT_QUICK_LIB;QT_PRINTSUPPORT_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmaind.lib;shell32.lib;C:\Users\hyhyx\Desktop\Code\vnote\hoedown\debug\hoedown.lib;peg-highlight.lib;$(QTDIR)\lib\Qt5WebEngineWidgetsd.lib;$(QTDIR)\lib\Qt5WebEngineCored.lib;$(QTDIR)\lib\Qt5Quickd.lib;$(QTDIR)\lib\Qt5PrintSupportd.lib;$(QTDIR)\lib\Qt5Svgd.lib;$(QTDIR)\lib\Qt5Widgetsd.lib;$(QTDIR)\lib\Qt5Guid.lib;$(QTDIR)\lib\Qt5WebChanneld.lib;$(QTDIR)\lib\Qt5Qmld.lib;$(QTDIR)\lib\Qt5Networkd.lib;$(QTDIR)\lib\Qt5Positioningd.lib;$(QTDIR)\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;$(QTDIR)\lib;C:\Users\hyhyx\Desktop\Code\vnote\hoedown\debug;C:\Users\hyhyx\Desktop\Code\vnote\peg-highlight\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\VNote.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_WEBENGINEWIDGETS_LIB;QT_WEBENGINECORE_LIB;QT_QUICK_LIB;QT_PRINTSUPPORT_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <QTDIR>$(QTDIR)</QTDIR>
+      <InputFile>%(FullPath)</InputFile>
+      <OutputFile>.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</OutputFile>
+      <Define>UNICODE;_UNICODE;WIN32;WIN64;QT_WEBENGINEWIDGETS_LIB;QT_WEBENGINECORE_LIB;QT_QUICK_LIB;QT_PRINTSUPPORT_LIB;QT_SVG_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_WEBCHANNEL_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_POSITIONING_LIB;QT_CORE_LIB</Define>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>debug/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <IncludePath>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;$(QTDIR)\mkspecs/win32-msvc;.;C:/Users/hyhyx/Desktop/Code/vnote/hoedown;C:/Users/hyhyx/Desktop/Code/vnote/peg-highlight;$(QTDIR)\include;$(QTDIR)\include/QtWebEngineWidgets;$(QTDIR)\include/QtWebEngineCore;$(QTDIR)\include/QtQuick;$(QTDIR)\include/QtPrintSupport;$(QTDIR)\include/QtSvg;$(QTDIR)\include/QtWidgets;$(QTDIR)\include/QtGui;$(QTDIR)\include/QtANGLE;$(QTDIR)\include/QtWebChannel;$(QTDIR)\include/QtQml;$(QTDIR)\include/QtNetwork;$(QTDIR)\include/QtPositioning;$(QTDIR)\include/QtCore;C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.13.26128\include;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\cppwinrt</IncludePath>
+    </QtMoc>
+    <QtRcc>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <Compression>default</Compression>
+      <OutputFile>.\GeneratedFiles\qrc_%(Filename).cpp</OutputFile>
+      <InputFile>%(FullPath)</InputFile>
+      <QTDIR>$(QTDIR)</QTDIR>
+    </QtRcc>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="hgmarkdownhighlighter.cpp" />
+    <ClCompile Include="lineeditdelegate.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="vattachmentlist.cpp" />
+    <ClCompile Include="vbuttonmenuitem.cpp" />
+    <ClCompile Include="vbuttonwithwidget.cpp" />
+    <ClCompile Include="vcaptain.cpp" />
+    <ClCompile Include="vcart.cpp" />
+    <ClCompile Include="utils\vclipboardutils.cpp" />
+    <ClCompile Include="vcodeblockhighlighthelper.cpp" />
+    <ClCompile Include="vconfigmanager.cpp" />
+    <ClCompile Include="dialog\vconfirmdeletiondialog.cpp" />
+    <ClCompile Include="dialog\vcopytextashtmldialog.cpp" />
+    <ClCompile Include="dialog\vdeletenotebookdialog.cpp" />
+    <ClCompile Include="vdirectory.cpp" />
+    <ClCompile Include="vdirectorytree.cpp" />
+    <ClCompile Include="dialog\vdirinfodialog.cpp" />
+    <ClCompile Include="vdocument.cpp" />
+    <ClCompile Include="vdoublerowitemwidget.cpp" />
+    <ClCompile Include="vdownloader.cpp" />
+    <ClCompile Include="vedit.cpp" />
+    <ClCompile Include="veditarea.cpp" />
+    <ClCompile Include="veditconfig.cpp" />
+    <ClCompile Include="veditoperations.cpp" />
+    <ClCompile Include="veditor.cpp" />
+    <ClCompile Include="dialog\veditsnippetdialog.cpp" />
+    <ClCompile Include="vedittab.cpp" />
+    <ClCompile Include="utils\veditutils.cpp" />
+    <ClCompile Include="veditwindow.cpp" />
+    <ClCompile Include="dialog\vexportdialog.cpp" />
+    <ClCompile Include="vexporter.cpp" />
+    <ClCompile Include="vfile.cpp" />
+    <ClCompile Include="dialog\vfileinfodialog.cpp" />
+    <ClCompile Include="vfilelist.cpp" />
+    <ClCompile Include="vfilesessioninfo.cpp" />
+    <ClCompile Include="dialog\vfindreplacedialog.cpp" />
+    <ClCompile Include="dialog\vfixnotebookdialog.cpp" />
+    <ClCompile Include="vgraphvizhelper.cpp" />
+    <ClCompile Include="vhelpue.cpp" />
+    <ClCompile Include="vhtmltab.cpp" />
+    <ClCompile Include="utils\viconutils.cpp" />
+    <ClCompile Include="vimageresourcemanager.cpp" />
+    <ClCompile Include="vimageresourcemanager2.cpp" />
+    <ClCompile Include="utils\vimnavigationforwidget.cpp" />
+    <ClCompile Include="dialog\vinsertimagedialog.cpp" />
+    <ClCompile Include="dialog\vinsertlinkdialog.cpp" />
+    <ClCompile Include="vinsertselector.cpp" />
+    <ClCompile Include="vlineedit.cpp" />
+    <ClCompile Include="vlinenumberarea.cpp" />
+    <ClCompile Include="vlistfolderue.cpp" />
+    <ClCompile Include="vlistwidget.cpp" />
+    <ClCompile Include="vlistwidgetdoublerows.cpp" />
+    <ClCompile Include="vlivepreviewhelper.cpp" />
+    <ClCompile Include="vmainwindow.cpp" />
+    <ClCompile Include="vmarkdownconverter.cpp" />
+    <ClCompile Include="vmdedit.cpp" />
+    <ClCompile Include="vmdeditoperations.cpp" />
+    <ClCompile Include="vmdeditor.cpp" />
+    <ClCompile Include="vmdtab.cpp" />
+    <ClCompile Include="vmetawordlineedit.cpp" />
+    <ClCompile Include="utils\vmetawordmanager.cpp" />
+    <ClCompile Include="vnavigationmode.cpp" />
+    <ClCompile Include="dialog\vnewdirdialog.cpp" />
+    <ClCompile Include="dialog\vnewfiledialog.cpp" />
+    <ClCompile Include="dialog\vnewnotebookdialog.cpp" />
+    <ClCompile Include="vnofocusitemdelegate.cpp" />
+    <ClCompile Include="vnote.cpp" />
+    <ClCompile Include="vnotebook.cpp" />
+    <ClCompile Include="dialog\vnotebookinfodialog.cpp" />
+    <ClCompile Include="vnotebookselector.cpp" />
+    <ClCompile Include="vnotefile.cpp" />
+    <ClCompile Include="vopenedlistmenu.cpp" />
+    <ClCompile Include="vorphanfile.cpp" />
+    <ClCompile Include="dialog\vorphanfileinfodialog.cpp" />
+    <ClCompile Include="voutline.cpp" />
+    <ClCompile Include="voutlineue.cpp" />
+    <ClCompile Include="vpalette.cpp" />
+    <ClCompile Include="vplaintextedit.cpp" />
+    <ClCompile Include="vplantumlhelper.cpp" />
+    <ClCompile Include="vpreviewmanager.cpp" />
+    <ClCompile Include="vpreviewpage.cpp" />
+    <ClCompile Include="utils\vpreviewutils.cpp" />
+    <ClCompile Include="vsearch.cpp" />
+    <ClCompile Include="vsearchengine.cpp" />
+    <ClCompile Include="vsearcher.cpp" />
+    <ClCompile Include="vsearchresulttree.cpp" />
+    <ClCompile Include="vsearchue.cpp" />
+    <ClCompile Include="dialog\vselectdialog.cpp" />
+    <ClCompile Include="dialog\vsettingsdialog.cpp" />
+    <ClCompile Include="vsimplesearchinput.cpp" />
+    <ClCompile Include="vsingleinstanceguard.cpp" />
+    <ClCompile Include="vsnippet.cpp" />
+    <ClCompile Include="vsnippetlist.cpp" />
+    <ClCompile Include="dialog\vsortdialog.cpp" />
+    <ClCompile Include="vstyleditemdelegate.cpp" />
+    <ClCompile Include="vstyleparser.cpp" />
+    <ClCompile Include="vtabindicator.cpp" />
+    <ClCompile Include="vtableofcontent.cpp" />
+    <ClCompile Include="vtextblockdata.cpp" />
+    <ClCompile Include="vtextdocumentlayout.cpp" />
+    <ClCompile Include="vtextedit.cpp" />
+    <ClCompile Include="dialog\vtipsdialog.cpp" />
+    <ClCompile Include="vtoolbox.cpp" />
+    <ClCompile Include="vtreewidget.cpp" />
+    <ClCompile Include="vuniversalentry.cpp" />
+    <ClCompile Include="dialog\vupdater.cpp" />
+    <ClCompile Include="utils\vutils.cpp" />
+    <ClCompile Include="utils\vvim.cpp" />
+    <ClCompile Include="vvimcmdlineedit.cpp" />
+    <ClCompile Include="vvimindicator.cpp" />
+    <ClCompile Include="vwaitingwidget.cpp" />
+    <ClCompile Include="utils\vwebutils.cpp" />
+    <ClCompile Include="vwebview.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="hgmarkdownhighlighter.h">
+    </QtMoc>
+    <QtMoc Include="isearchengine.h">
+    </QtMoc>
+    <QtMoc Include="iuniversalentry.h">
+    </QtMoc>
+    <QtMoc Include="lineeditdelegate.h">
+    </QtMoc>
+    <QtMoc Include="vattachmentlist.h">
+    </QtMoc>
+    <QtMoc Include="vbuttonmenuitem.h">
+    </QtMoc>
+    <QtMoc Include="vbuttonwithwidget.h">
+    </QtMoc>
+    <QtMoc Include="vcaptain.h">
+    </QtMoc>
+    <QtMoc Include="vcart.h">
+    </QtMoc>
+    <ClInclude Include="utils\vclipboardutils.h" />
+    <QtMoc Include="vcodeblockhighlighthelper.h">
+    </QtMoc>
+    <ClInclude Include="vconfigmanager.h" />
+    <QtMoc Include="dialog\vconfirmdeletiondialog.h">
+    </QtMoc>
+    <ClInclude Include="vconstants.h" />
+    <QtMoc Include="dialog\vcopytextashtmldialog.h">
+    </QtMoc>
+    <QtMoc Include="dialog\vdeletenotebookdialog.h">
+    </QtMoc>
+    <QtMoc Include="vdirectory.h">
+    </QtMoc>
+    <QtMoc Include="vdirectorytree.h">
+    </QtMoc>
+    <QtMoc Include="dialog\vdirinfodialog.h">
+    </QtMoc>
+    <QtMoc Include="vdocument.h">
+    </QtMoc>
+    <QtMoc Include="vdoublerowitemwidget.h">
+    </QtMoc>
+    <QtMoc Include="vdownloader.h">
+    </QtMoc>
+    <QtMoc Include="vedit.h">
+    </QtMoc>
+    <QtMoc Include="veditarea.h">
+    </QtMoc>
+    <ClInclude Include="veditconfig.h" />
+    <QtMoc Include="veditoperations.h">
+    </QtMoc>
+    <QtMoc Include="veditor.h">
+    </QtMoc>
+    <QtMoc Include="dialog\veditsnippetdialog.h">
+    </QtMoc>
+    <QtMoc Include="vedittab.h">
+    </QtMoc>
+    <ClInclude Include="vedittabinfo.h" />
+    <ClInclude Include="utils\veditutils.h" />
+    <QtMoc Include="veditwindow.h">
+    </QtMoc>
+    <QtMoc Include="dialog\vexportdialog.h">
+    </QtMoc>
+    <QtMoc Include="vexporter.h">
+    </QtMoc>
+    <QtMoc Include="vfile.h">
+    </QtMoc>
+    <QtMoc Include="dialog\vfileinfodialog.h">
+    </QtMoc>
+    <QtMoc Include="vfilelist.h">
+    </QtMoc>
+    <ClInclude Include="vfilesessioninfo.h" />
+    <QtMoc Include="dialog\vfindreplacedialog.h">
+    </QtMoc>
+    <QtMoc Include="dialog\vfixnotebookdialog.h">
+    </QtMoc>
+    <QtMoc Include="vgraphvizhelper.h">
+    </QtMoc>
+    <QtMoc Include="vhelpue.h">
+    </QtMoc>
+    <QtMoc Include="vhtmltab.h">
+    </QtMoc>
+    <ClInclude Include="utils\viconutils.h" />
+    <ClInclude Include="vimageresourcemanager.h" />
+    <ClInclude Include="vimageresourcemanager2.h" />
+    <ClInclude Include="utils\vimnavigationforwidget.h" />
+    <QtMoc Include="dialog\vinsertimagedialog.h">
+    </QtMoc>
+    <QtMoc Include="dialog\vinsertlinkdialog.h">
+    </QtMoc>
+    <QtMoc Include="vinsertselector.h">
+    </QtMoc>
+    <QtMoc Include="vlineedit.h">
+    </QtMoc>
+    <QtMoc Include="vlinenumberarea.h">
+    </QtMoc>
+    <QtMoc Include="vlistfolderue.h">
+    </QtMoc>
+    <ClInclude Include="vlistwidget.h" />
+    <QtMoc Include="vlistwidgetdoublerows.h">
+    </QtMoc>
+    <QtMoc Include="vlivepreviewhelper.h">
+    </QtMoc>
+    <QtMoc Include="vmainwindow.h">
+    </QtMoc>
+    <ClInclude Include="vmarkdownconverter.h" />
+    <QtMoc Include="vmdedit.h">
+    </QtMoc>
+    <QtMoc Include="vmdeditoperations.h">
+    </QtMoc>
+    <QtMoc Include="vmdeditor.h">
+    </QtMoc>
+    <QtMoc Include="vmdtab.h">
+    </QtMoc>
+    <QtMoc Include="vmetawordlineedit.h">
+    </QtMoc>
+    <QtMoc Include="utils\vmetawordmanager.h">
+    </QtMoc>
+    <ClInclude Include="vnavigationmode.h" />
+    <QtMoc Include="dialog\vnewdirdialog.h">
+    </QtMoc>
+    <QtMoc Include="dialog\vnewfiledialog.h">
+    </QtMoc>
+    <QtMoc Include="dialog\vnewnotebookdialog.h">
+    </QtMoc>
+    <QtMoc Include="vnofocusitemdelegate.h">
+    </QtMoc>
+    <QtMoc Include="vnote.h">
+    </QtMoc>
+    <QtMoc Include="vnotebook.h">
+    </QtMoc>
+    <QtMoc Include="dialog\vnotebookinfodialog.h">
+    </QtMoc>
+    <QtMoc Include="vnotebookselector.h">
+    </QtMoc>
+    <QtMoc Include="vnotefile.h">
+    </QtMoc>
+    <QtMoc Include="vopenedlistmenu.h">
+    </QtMoc>
+    <QtMoc Include="vorphanfile.h">
+    </QtMoc>
+    <QtMoc Include="dialog\vorphanfileinfodialog.h">
+    </QtMoc>
+    <QtMoc Include="voutline.h">
+    </QtMoc>
+    <QtMoc Include="voutlineue.h">
+    </QtMoc>
+    <ClInclude Include="vpalette.h" />
+    <QtMoc Include="vplaintextedit.h">
+    </QtMoc>
+    <QtMoc Include="vplantumlhelper.h">
+    </QtMoc>
+    <QtMoc Include="vpreviewmanager.h">
+    </QtMoc>
+    <QtMoc Include="vpreviewpage.h">
+    </QtMoc>
+    <ClInclude Include="utils\vpreviewutils.h" />
+    <QtMoc Include="vsearch.h">
+    </QtMoc>
+    <ClInclude Include="vsearchconfig.h" />
+    <QtMoc Include="vsearchengine.h">
+    </QtMoc>
+    <QtMoc Include="vsearcher.h">
+    </QtMoc>
+    <QtMoc Include="vsearchresulttree.h">
+    </QtMoc>
+    <QtMoc Include="vsearchue.h">
+    </QtMoc>
+    <QtMoc Include="dialog\vselectdialog.h">
+    </QtMoc>
+    <QtMoc Include="dialog\vsettingsdialog.h">
+    </QtMoc>
+    <QtMoc Include="vsimplesearchinput.h">
+    </QtMoc>
+    <ClInclude Include="vsingleinstanceguard.h" />
+    <ClInclude Include="vsnippet.h" />
+    <QtMoc Include="vsnippetlist.h">
+    </QtMoc>
+    <QtMoc Include="dialog\vsortdialog.h">
+    </QtMoc>
+    <ClInclude Include="vstyleditemdelegate.h" />
+    <ClInclude Include="vstyleparser.h" />
+    <QtMoc Include="vtabindicator.h">
+    </QtMoc>
+    <ClInclude Include="vtableofcontent.h" />
+    <ClInclude Include="vtextblockdata.h" />
+    <QtMoc Include="vtextdocumentlayout.h">
+    </QtMoc>
+    <QtMoc Include="vtextedit.h">
+    </QtMoc>
+    <QtMoc Include="dialog\vtipsdialog.h">
+    </QtMoc>
+    <QtMoc Include="vtoolbox.h">
+    </QtMoc>
+    <QtMoc Include="vtreewidget.h">
+    </QtMoc>
+    <QtMoc Include="vuniversalentry.h">
+    </QtMoc>
+    <QtMoc Include="dialog\vupdater.h">
+    </QtMoc>
+    <ClInclude Include="utils\vutils.h" />
+    <QtMoc Include="utils\vvim.h">
+    </QtMoc>
+    <QtMoc Include="vvimcmdlineedit.h">
+    </QtMoc>
+    <QtMoc Include="vvimindicator.h">
+    </QtMoc>
+    <QtMoc Include="vwaitingwidget.h">
+    </QtMoc>
+    <ClInclude Include="utils\vwebutils.h" />
+    <QtMoc Include="vwebview.h">
+    </QtMoc>
+    <ClInclude Include="vwordcountinfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="translations\vnote_zh_CN.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons\add_attachment.svg" />
+    <None Include="resources\icons\add_program.svg" />
+    <None Include="resources\icons\add_snippet.svg" />
+    <None Include="resources\icons\add_style.svg" />
+    <None Include="resources\icons\apply_snippet.svg" />
+    <None Include="resources\themes\v_moonlight\arrow_dropdown.svg" />
+    <None Include="resources\themes\v_native\arrow_dropdown.svg" />
+    <None Include="resources\themes\v_pure\arrow_dropdown.svg" />
+    <None Include="resources\themes\v_moonlight\arrow_dropdown_disabled.svg" />
+    <None Include="resources\themes\v_native\arrow_dropdown_disabled.svg" />
+    <None Include="resources\themes\v_pure\arrow_dropdown_disabled.svg" />
+    <None Include="resources\icons\attachment.svg" />
+    <None Include="resources\icons\bold.svg" />
+    <None Include="resources\themes\v_moonlight\branch_closed.svg" />
+    <None Include="resources\themes\v_pure\branch_closed.svg" />
+    <None Include="resources\themes\v_pure\branch_end.svg" />
+    <None Include="resources\themes\v_pure\branch_more.svg" />
+    <None Include="resources\themes\v_moonlight\branch_open.svg" />
+    <None Include="resources\themes\v_pure\branch_open.svg" />
+    <None Include="resources\icons\cart.svg" />
+    <None Include="resources\themes\v_moonlight\checkbox_checked.svg" />
+    <None Include="resources\themes\v_pure\checkbox_checked.svg" />
+    <None Include="resources\themes\v_moonlight\checkbox_checked_disabled.svg" />
+    <None Include="resources\themes\v_pure\checkbox_checked_disabled.svg" />
+    <None Include="resources\themes\v_moonlight\checkbox_unchecked.svg" />
+    <None Include="resources\themes\v_pure\checkbox_unchecked.svg" />
+    <None Include="resources\themes\v_moonlight\checkbox_unchecked_disabled.svg" />
+    <None Include="resources\themes\v_pure\checkbox_unchecked_disabled.svg" />
+    <None Include="resources\icons\clear_attachment.svg" />
+    <None Include="resources\icons\clear_cart.svg" />
+    <None Include="resources\icons\clear_search.svg" />
+    <None Include="resources\icons\close.svg" />
+    <None Include="resources\themes\v_moonlight\close.svg" />
+    <None Include="resources\themes\v_native\close.svg" />
+    <None Include="resources\themes\v_pure\close.svg" />
+    <None Include="resources\themes\v_moonlight\close_grey.svg" />
+    <None Include="resources\themes\v_native\close_grey.svg" />
+    <None Include="resources\themes\v_pure\close_grey.svg" />
+    <None Include="resources\icons\close_note_tb.svg" />
+    <None Include="resources\icons\close_red.svg" />
+    <None Include="resources\icons\code_block.svg" />
+    <None Include="resources\icons\compact_mode.svg" />
+    <None Include="resources\icons\copy.svg" />
+    <None Include="resources\icons\corner_menu.svg" />
+    <None Include="resources\icons\corner_menu_cur.svg" />
+    <None Include="resources\icons\corner_tablist.svg" />
+    <None Include="resources\icons\corner_tablist_cur.svg" />
+    <None Include="resources\icons\create_note.svg" />
+    <None Include="resources\icons\create_note_tb.svg" />
+    <None Include="resources\icons\create_notebook.svg" />
+    <None Include="resources\icons\create_rootdir.svg" />
+    <None Include="resources\icons\create_rootdir_tb.svg" />
+    <None Include="resources\icons\create_subdir.svg" />
+    <None Include="resources\icons\cut.svg" />
+    <None Include="resources\icons\delete_attachment.svg" />
+    <None Include="resources\icons\delete_cart_item.svg" />
+    <None Include="resources\icons\delete_dir.svg" />
+    <None Include="resources\icons\delete_note.svg" />
+    <None Include="resources\icons\delete_note_tb.svg" />
+    <None Include="resources\icons\delete_notebook.svg" />
+    <None Include="resources\icons\delete_snippet.svg" />
+    <None Include="resources\icons\dir_info.svg" />
+    <None Include="resources\icons\dir_item.svg" />
+    <None Include="resources\icons\discard_exit.svg" />
+    <None Include="resources\themes\v_moonlight\down.svg" />
+    <None Include="resources\themes\v_pure\down.svg" />
+    <None Include="resources\themes\v_moonlight\down_disabled.svg" />
+    <None Include="resources\themes\v_pure\down_disabled.svg" />
+    <None Include="resources\icons\edit_note.svg" />
+    <None Include="resources\icons\editing.svg" />
+    <None Include="resources\icons\editing_modified.svg" />
+    <None Include="resources\icons\empty_recycle_bin.svg" />
+    <None Include="resources\icons\expand.svg" />
+    <None Include="resources\export_template.html" />
+    <None Include="resources\icons\find_replace.svg" />
+    <None Include="resources\icons\flash_page.svg" />
+    <None Include="resources\themes\v_moonlight\float.svg" />
+    <None Include="resources\themes\v_native\float.svg" />
+    <None Include="resources\themes\v_pure\float.svg" />
+    <None Include="utils\flowchart.js\flowchart.min.js" />
+    <None Include="resources\icons\fullscreen.svg" />
+    <None Include="resources\icons\heading.svg" />
+    <None Include="resources\icons\heading_sequence.svg" />
+    <None Include="utils\highlightjs\highlight.pack.js" />
+    <None Include="utils\highlightjs\highlightjs-line-numbers.min.js" />
+    <None Include="resources\hoedown.js" />
+    <None Include="resources\icons\import_note.svg" />
+    <None Include="resources\icons\inline_code.svg" />
+    <None Include="resources\icons\insert_image.svg" />
+    <None Include="resources\icons\italic.svg" />
+    <None Include="resources\themes\v_moonlight\left.svg" />
+    <None Include="resources\themes\v_pure\left.svg" />
+    <None Include="resources\themes\v_moonlight\left_disabled.svg" />
+    <None Include="resources\themes\v_pure\left_disabled.svg" />
+    <None Include="resources\themes\v_pure\line.svg" />
+    <None Include="resources\icons\link.svg" />
+    <None Include="resources\icons\locate_attachment.svg" />
+    <None Include="resources\icons\locate_note.svg" />
+    <None Include="resources\icons\locate_snippet.svg" />
+    <None Include="resources\icons\manage_template.svg" />
+    <None Include="utils\markdown-it\markdown-it-footnote.min.js" />
+    <None Include="utils\markdown-it\markdown-it-headinganchor.js" />
+    <None Include="utils\markdown-it\markdown-it-sub.min.js" />
+    <None Include="utils\markdown-it\markdown-it-sup.min.js" />
+    <None Include="utils\markdown-it\markdown-it-task-lists.min.js" />
+    <None Include="resources\markdown-it.js" />
+    <None Include="utils\markdown-it\markdown-it.min.js" />
+    <None Include="resources\docs\markdown_guide_en.md" />
+    <None Include="resources\docs\markdown_guide_zh.md" />
+    <None Include="resources\markdown_template.html" />
+    <None Include="resources\markdown_template.js" />
+    <None Include="resources\marked.js" />
+    <None Include="utils\marked\marked.min.js" />
+    <None Include="resources\themes\v_moonlight\menu_checkbox.svg" />
+    <None Include="resources\themes\v_pure\menu_checkbox.svg" />
+    <None Include="resources\themes\v_moonlight\menu_radiobutton.svg" />
+    <None Include="resources\themes\v_pure\menu_radiobutton.svg" />
+    <None Include="resources\icons\menubar.svg" />
+    <None Include="utils\mermaid\mermaidAPI.min.js" />
+    <None Include="resources\icons\move_tab_left.svg" />
+    <None Include="resources\icons\move_tab_right.svg" />
+    <None Include="resources\icons\note_info.svg" />
+    <None Include="resources\icons\note_info_tb.svg" />
+    <None Include="resources\icons\note_item.svg" />
+    <None Include="resources\icons\notebook_info.svg" />
+    <None Include="resources\icons\notebook_item.svg" />
+    <None Include="resources\icons\one_panel.svg" />
+    <None Include="resources\icons\outline.svg" />
+    <None Include="resources\icons\paste.svg" />
+    <None Include="resources\icons\print.svg" />
+    <None Include="translations\qdialogbuttonbox_zh_CN.qm" />
+    <None Include="translations\qt_zh_CN.qm" />
+    <None Include="resources\qwebchannel.js" />
+    <None Include="translations\qwebengine_zh_CN.qm" />
+    <None Include="resources\themes\v_moonlight\radiobutton_checked.svg" />
+    <None Include="resources\themes\v_pure\radiobutton_checked.svg" />
+    <None Include="resources\themes\v_moonlight\radiobutton_checked_disabled.svg" />
+    <None Include="resources\themes\v_pure\radiobutton_checked_disabled.svg" />
+    <None Include="resources\themes\v_moonlight\radiobutton_unchecked.svg" />
+    <None Include="resources\themes\v_pure\radiobutton_unchecked.svg" />
+    <None Include="resources\themes\v_moonlight\radiobutton_unchecked_disabled.svg" />
+    <None Include="resources\themes\v_pure\radiobutton_unchecked_disabled.svg" />
+    <None Include="utils\flowchart.js\raphael.min.js" />
+    <None Include="resources\icons\reading.svg" />
+    <None Include="resources\icons\reading_modified.svg" />
+    <None Include="resources\icons\recycle_bin.svg" />
+    <None Include="resources\icons\remove_split.svg" />
+    <None Include="resources\themes\v_moonlight\right.svg" />
+    <None Include="resources\themes\v_pure\right.svg" />
+    <None Include="resources\themes\v_moonlight\right_disabled.svg" />
+    <None Include="resources\themes\v_pure\right_disabled.svg" />
+    <None Include="resources\icons\save_exit.svg" />
+    <None Include="resources\icons\save_note.svg" />
+    <None Include="resources\icons\search.svg" />
+    <None Include="resources\icons\search_advanced.svg" />
+    <None Include="resources\icons\search_console.svg" />
+    <None Include="resources\icons\search_wrap.svg" />
+    <None Include="resources\icons\settings.svg" />
+    <None Include="resources\docs\shortcuts_en.md" />
+    <None Include="resources\docs\shortcuts_zh.md" />
+    <None Include="utils\showdown\showdown-headinganchor.js" />
+    <None Include="resources\showdown.js" />
+    <None Include="utils\showdown\showdown.min.js" />
+    <None Include="resources\simple_template.html" />
+    <None Include="resources\icons\snippet_info.svg" />
+    <None Include="resources\icons\snippets.svg" />
+    <None Include="resources\icons\sort.svg" />
+    <None Include="resources\icons\split_window.svg" />
+    <None Include="resources\icons\strikethrough.svg" />
+    <None Include="resources\docs\tips_add_style_en.md" />
+    <None Include="resources\docs\tips_add_style_zh.md" />
+    <None Include="resources\docs\tips_add_theme_en.md" />
+    <None Include="resources\docs\tips_add_theme_zh.md" />
+    <None Include="resources\docs\tips_custom_shortcut_en.md" />
+    <None Include="resources\docs\tips_custom_shortcut_zh.md" />
+    <None Include="resources\docs\tips_external_program_en.md" />
+    <None Include="resources\docs\tips_external_program_zh.md" />
+    <QtRcc Include="translations.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">translations</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">translations</InitFuncName>
+    </QtRcc>
+    <None Include="resources\icons\two_panels.svg" />
+    <None Include="resources\typewriter.css" />
+    <None Include="resources\icons\universal_entry_tb.svg" />
+    <None Include="resources\themes\v_moonlight\up.svg" />
+    <None Include="resources\themes\v_pure\up.svg" />
+    <None Include="resources\themes\v_moonlight\up_disabled.svg" />
+    <None Include="resources\themes\v_pure\up_disabled.svg" />
+    <None Include="resources\themes\v_moonlight\v_moonlight.css" />
+    <None Include="resources\themes\v_moonlight\v_moonlight.mdhl" />
+    <None Include="resources\themes\v_moonlight\v_moonlight.palette" />
+    <None Include="resources\themes\v_moonlight\v_moonlight.qss" />
+    <None Include="resources\themes\v_moonlight\v_moonlight_codeblock.css" />
+    <None Include="resources\themes\v_moonlight\v_moonlight_mermaid.css" />
+    <None Include="resources\themes\v_native\v_native.css" />
+    <None Include="resources\themes\v_native\v_native.mdhl" />
+    <None Include="resources\themes\v_native\v_native.palette" />
+    <None Include="resources\themes\v_native\v_native.qss" />
+    <None Include="resources\themes\v_native\v_native_codeblock.css" />
+    <None Include="resources\themes\v_native\v_native_mermaid.css" />
+    <None Include="resources\themes\v_pure\v_pure.css" />
+    <None Include="resources\themes\v_pure\v_pure.mdhl" />
+    <None Include="resources\themes\v_pure\v_pure.palette" />
+    <None Include="resources\themes\v_pure\v_pure.qss" />
+    <None Include="resources\themes\v_pure\v_pure_codeblock.css" />
+    <None Include="resources\themes\v_pure\v_pure_mermaid.css" />
+    <None Include="resources\icons\vnote.ico" />
+    <None Include="resources\vnote.ini" />
+    <None Include="resources\icons\32x32\vnote.png" />
+    <None Include="resources\icons\vnote.png" />
+    <QtRcc Include="vnote.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vnote</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vnote</InitFuncName>
+    </QtRcc>
+    <None Include="resources\icons\vnote.svg" />
+    <None Include="resources\icons\vnote_update.svg" />
+    <None Include="translations\vnote_zh_CN.qm" />
+    <None Include="resources\welcome.html" />
+    <None Include="translations\widgets_zh_CN.qm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\VNote_resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" Qt5Version_x0020_x64="msvc2017_64" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

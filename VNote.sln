@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hoedown", "C:/Users/hyhyx/Desktop/Code/vnote/hoedown\hoedown.vcxproj", "{32B30EC4-1188-30AC-A9F5-B4805FAAD745}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "peg-highlight", "C:/Users/hyhyx/Desktop/Code/vnote/peg-highlight\peg-highlight.vcxproj", "{E765CC7D-5065-3CDB-BBAC-EEB52FEAB757}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VNote", "C:/Users/hyhyx/Desktop/Code/vnote/src\VNote.vcxproj", "{5E2FA660-E7E1-3453-BA87-5BE284027B5F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{32B30EC4-1188-30AC-A9F5-B4805FAAD745} = {32B30EC4-1188-30AC-A9F5-B4805FAAD745}
+		{E765CC7D-5065-3CDB-BBAC-EEB52FEAB757} = {E765CC7D-5065-3CDB-BBAC-EEB52FEAB757}
+		{32B30EC4-1188-30AC-A9F5-B4805FAAD745} = {32B30EC4-1188-30AC-A9F5-B4805FAAD745}
+		{E765CC7D-5065-3CDB-BBAC-EEB52FEAB757} = {E765CC7D-5065-3CDB-BBAC-EEB52FEAB757}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32B30EC4-1188-30AC-A9F5-B4805FAAD745}.Debug|x64.ActiveCfg = Debug|x64
+		{32B30EC4-1188-30AC-A9F5-B4805FAAD745}.Debug|x64.Build.0 = Debug|x64
+		{32B30EC4-1188-30AC-A9F5-B4805FAAD745}.Release|x64.ActiveCfg = Release|x64
+		{32B30EC4-1188-30AC-A9F5-B4805FAAD745}.Release|x64.Build.0 = Release|x64
+		{E765CC7D-5065-3CDB-BBAC-EEB52FEAB757}.Debug|x64.ActiveCfg = Debug|x64
+		{E765CC7D-5065-3CDB-BBAC-EEB52FEAB757}.Debug|x64.Build.0 = Debug|x64
+		{E765CC7D-5065-3CDB-BBAC-EEB52FEAB757}.Release|x64.ActiveCfg = Release|x64
+		{E765CC7D-5065-3CDB-BBAC-EEB52FEAB757}.Release|x64.Build.0 = Release|x64
+		{5E2FA660-E7E1-3453-BA87-5BE284027B5F}.Debug|x64.ActiveCfg = Debug|x64
+		{5E2FA660-E7E1-3453-BA87-5BE284027B5F}.Debug|x64.Build.0 = Debug|x64
+		{5E2FA660-E7E1-3453-BA87-5BE284027B5F}.Release|x64.ActiveCfg = Release|x64
+		{5E2FA660-E7E1-3453-BA87-5BE284027B5F}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,1403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hgmarkdownhighlighter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lineeditdelegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vattachmentlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vbuttonmenuitem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vbuttonwithwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcaptain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\vclipboardutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vcodeblockhighlighthelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vconfigmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vconfirmdeletiondialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vcopytextashtmldialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vdeletenotebookdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vdirectory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vdirectorytree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vdirinfodialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vdocument.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vdoublerowitemwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vdownloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="veditarea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="veditconfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="veditoperations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="veditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\veditsnippetdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vedittab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\veditutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="veditwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vexportdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vexporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vfileinfodialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vfilelist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vfilesessioninfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vfindreplacedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vfixnotebookdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vgraphvizhelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vhelpue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vhtmltab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\viconutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vimageresourcemanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vimageresourcemanager2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\vimnavigationforwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vinsertimagedialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vinsertlinkdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vinsertselector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vlineedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vlinenumberarea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vlistfolderue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vlistwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vlistwidgetdoublerows.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vlivepreviewhelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vmainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vmarkdownconverter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vmdedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vmdeditoperations.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vmdeditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vmdtab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vmetawordlineedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\vmetawordmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vnavigationmode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vnewdirdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vnewfiledialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vnewnotebookdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vnofocusitemdelegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vnote.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vnotebook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vnotebookinfodialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vnotebookselector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vnotefile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vopenedlistmenu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vorphanfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vorphanfileinfodialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="voutline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="voutlineue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vpalette.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vplaintextedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vplantumlhelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vpreviewmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vpreviewpage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\vpreviewutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vsearch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vsearchengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vsearcher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vsearchresulttree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vsearchue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vselectdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vsettingsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vsimplesearchinput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vsingleinstanceguard.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vsnippet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vsnippetlist.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vsortdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vstyleditemdelegate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vstyleparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vtabindicator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vtableofcontent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vtextblockdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vtextdocumentlayout.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vtextedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vtipsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vtoolbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vtreewidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vuniversalentry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog\vupdater.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\vutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\vvim.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vvimcmdlineedit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vvimindicator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vwaitingwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\vwebutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vwebview.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="hgmarkdownhighlighter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="isearchengine.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="iuniversalentry.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="lineeditdelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vattachmentlist.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vbuttonmenuitem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vbuttonwithwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vcaptain.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vcart.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="utils\vclipboardutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="vcodeblockhighlighthelper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="vconfigmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="dialog\vconfirmdeletiondialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="vconstants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="dialog\vcopytextashtmldialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\vdeletenotebookdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vdirectory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vdirectorytree.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\vdirinfodialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vdocument.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vdoublerowitemwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vdownloader.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vedit.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="veditarea.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="veditconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="veditoperations.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="veditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\veditsnippetdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vedittab.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="vedittabinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\veditutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="veditwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\vexportdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vexporter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vfile.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\vfileinfodialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vfilelist.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="vfilesessioninfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="dialog\vfindreplacedialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\vfixnotebookdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vgraphvizhelper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vhelpue.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vhtmltab.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="utils\viconutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vimageresourcemanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vimageresourcemanager2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\vimnavigationforwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="dialog\vinsertimagedialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\vinsertlinkdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vinsertselector.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vlineedit.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vlinenumberarea.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vlistfolderue.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="vlistwidget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="vlistwidgetdoublerows.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vlivepreviewhelper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vmainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="vmarkdownconverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="vmdedit.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vmdeditoperations.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vmdeditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vmdtab.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vmetawordlineedit.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="utils\vmetawordmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="vnavigationmode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="dialog\vnewdirdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\vnewfiledialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\vnewnotebookdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vnofocusitemdelegate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vnote.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vnotebook.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\vnotebookinfodialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vnotebookselector.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vnotefile.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vopenedlistmenu.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vorphanfile.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\vorphanfileinfodialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="voutline.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="voutlineue.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="vpalette.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="vplaintextedit.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vplantumlhelper.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vpreviewmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vpreviewpage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="utils\vpreviewutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="vsearch.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="vsearchconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="vsearchengine.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vsearcher.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vsearchresulttree.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vsearchue.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\vselectdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\vsettingsdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vsimplesearchinput.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="vsingleinstanceguard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vsnippet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="vsnippetlist.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\vsortdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="vstyleditemdelegate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vstyleparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="vtabindicator.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="vtableofcontent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vtextblockdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="vtextdocumentlayout.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vtextedit.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\vtipsdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vtoolbox.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vtreewidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vuniversalentry.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="dialog\vupdater.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="utils\vutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="utils\vvim.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vvimcmdlineedit.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vvimindicator.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="vwaitingwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="utils\vwebutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="vwebview.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="vwordcountinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="translations\vnote_zh_CN.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\icons\add_attachment.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\add_program.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\add_snippet.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\add_style.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\apply_snippet.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\arrow_dropdown.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_native\arrow_dropdown.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\arrow_dropdown.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\arrow_dropdown_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_native\arrow_dropdown_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\arrow_dropdown_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\attachment.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\bold.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\branch_closed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\branch_closed.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\branch_end.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\branch_more.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\branch_open.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\branch_open.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\cart.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\checkbox_checked.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\checkbox_checked.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\checkbox_checked_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\checkbox_checked_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\checkbox_unchecked.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\checkbox_unchecked.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\checkbox_unchecked_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\checkbox_unchecked_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\clear_attachment.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\clear_cart.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\clear_search.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\close.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\close.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_native\close.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\close.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\close_grey.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_native\close_grey.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\close_grey.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\close_note_tb.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\close_red.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\code_block.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\compact_mode.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\copy.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\corner_menu.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\corner_menu_cur.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\corner_tablist.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\corner_tablist_cur.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\create_note.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\create_note_tb.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\create_notebook.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\create_rootdir.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\create_rootdir_tb.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\create_subdir.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\cut.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\delete_attachment.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\delete_cart_item.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\delete_dir.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\delete_note.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\delete_note_tb.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\delete_notebook.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\delete_snippet.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\dir_info.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\dir_item.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\discard_exit.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\down.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\down.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\down_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\down_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\edit_note.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\editing.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\editing_modified.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\empty_recycle_bin.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\expand.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\export_template.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\find_replace.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\flash_page.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\float.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_native\float.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\float.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="utils\flowchart.js\flowchart.min.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\fullscreen.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\heading.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\heading_sequence.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="utils\highlightjs\highlight.pack.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="utils\highlightjs\highlightjs-line-numbers.min.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\hoedown.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\import_note.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\inline_code.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\insert_image.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\italic.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\left.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\left.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\left_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\left_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\line.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\link.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\locate_attachment.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\locate_note.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\locate_snippet.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\manage_template.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="utils\markdown-it\markdown-it-footnote.min.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="utils\markdown-it\markdown-it-headinganchor.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="utils\markdown-it\markdown-it-sub.min.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="utils\markdown-it\markdown-it-sup.min.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="utils\markdown-it\markdown-it-task-lists.min.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\markdown-it.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="utils\markdown-it\markdown-it.min.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\docs\markdown_guide_en.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\docs\markdown_guide_zh.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\markdown_template.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\markdown_template.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\marked.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="utils\marked\marked.min.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\menu_checkbox.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\menu_checkbox.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\menu_radiobutton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\menu_radiobutton.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\menubar.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="utils\mermaid\mermaidAPI.min.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\move_tab_left.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\move_tab_right.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\note_info.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\note_info_tb.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\note_item.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\notebook_info.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\notebook_item.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\one_panel.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\outline.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\paste.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\print.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="translations\qdialogbuttonbox_zh_CN.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="translations\qt_zh_CN.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\qwebchannel.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="translations\qwebengine_zh_CN.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\radiobutton_checked.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\radiobutton_checked.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\radiobutton_checked_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\radiobutton_checked_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\radiobutton_unchecked.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\radiobutton_unchecked.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\radiobutton_unchecked_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\radiobutton_unchecked_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="utils\flowchart.js\raphael.min.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\reading.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\reading_modified.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\recycle_bin.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\remove_split.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\right.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\right.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\right_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\right_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\save_exit.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\save_note.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\search.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\search_advanced.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\search_console.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\search_wrap.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\settings.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\docs\shortcuts_en.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\docs\shortcuts_zh.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="utils\showdown\showdown-headinganchor.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\showdown.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="utils\showdown\showdown.min.js">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\simple_template.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\snippet_info.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\snippets.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\sort.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\split_window.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\strikethrough.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\docs\tips_add_style_en.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\docs\tips_add_style_zh.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\docs\tips_add_theme_en.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\docs\tips_add_theme_zh.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\docs\tips_custom_shortcut_en.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\docs\tips_custom_shortcut_zh.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\docs\tips_external_program_en.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\docs\tips_external_program_zh.md">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="translations.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="resources\icons\two_panels.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\typewriter.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\universal_entry_tb.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\up.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\up.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\up_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\up_disabled.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\v_moonlight.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\v_moonlight.mdhl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\v_moonlight.palette">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\v_moonlight.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\v_moonlight_codeblock.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_moonlight\v_moonlight_mermaid.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_native\v_native.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_native\v_native.mdhl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_native\v_native.palette">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_native\v_native.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_native\v_native_codeblock.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_native\v_native_mermaid.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\v_pure.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\v_pure.mdhl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\v_pure.palette">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\v_pure.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\v_pure_codeblock.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\themes\v_pure\v_pure_mermaid.css">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\vnote.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\vnote.ini">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\32x32\vnote.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\vnote.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="vnote.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="resources\icons\vnote.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\icons\vnote_update.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="translations\vnote_zh_CN.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resources\welcome.html">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="translations\widgets_zh_CN.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\VNote_resource.rc" />
+  </ItemGroup>
+</Project>
